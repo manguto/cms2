@@ -1,0 +1,32 @@
+/*============================================================== visualizacoes*/
+.visualizar-titulo {
+	/*background: #ff0;*/
+	
+}
+
+.visualizar-data-ctrl {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	/*background: #f00;*/
+}
+
+.visualizar-grade {
+	/*background: #00f;*/
+	margin-top:20px;
+}
+
+.visualizar-grade #gradehorarios {
+	/*overflow: auto;
+	height: 400px;
+	width: 1200px;/**/
+	
+}
+
+.visualizar-grade #gradehorarios th {
+	width: 500px;
+	padding: 5px 5px;
+}
+
+.visualizar-grade #gradehorarios td {
+	padding: 2px 5px;
+}

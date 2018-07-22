@@ -1,0 +1,22 @@
+<a href="/" class="btn btn-success mr-1">Home</a>
+
+{if="checkUserLogged()"}
+	
+	<a href='/inicializar' class='btn btn-success mr-1'>Inicializar</a>
+	
+	<a href='/automovelcategoria' class='btn btn-success mr-1'>Automóveis</a>
+	
+	<a href='/motoristacategoria' class='btn btn-success mr-1'>Motoristas</a>
+		
+	<a href='/reservar' class='btn btn-success mr-1'>Reservar</a>	
+	
+
+{/if}
+
+{if="checkUserLoggedAdmin()"}
+
+	<a href="/admin" class="btn btn-light btn-sm float-right">&#9658; BACK-END</a>
+
+{/if}
+
+

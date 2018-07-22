@@ -1,0 +1,31 @@
+{if="checkSuccess() || checkWarning() || checkError()"}
+<script>
+	var tempo_ocultar = 5*1000; //seg
+	var tempo_efeito = 3*1000; //seg
+	setTimeout(function() {
+		$('.process-results .btn-success').fadeOut(tempo_efeito);
+		//$('.process-results .btn-warning').removeClass('btn-warning').addClass('btn-secundary');
+		//$('.process-results .btn-danger').removeClass('btn-danger').addClass('btn-secundary');
+	}, tempo_ocultar);
+</script>
+{/if}
+<div class="container">
+	<div class="row">
+		<div class="col-10 process-results">			
+			<div class="row">
+				<div class="col-12 btn btn-danger mb-4 p-3" style="display:{if="checkError()"}block{else}none{/if};">{function="getError()"}</div>
+			</div>			
+			<div class="row">
+				<div class="col-12 btn btn-warning mb-4 p-3" style="display:{if="checkWarning()"}block{else}none{/if};">{function="getWarning()"}</div>
+			</div>			
+			<div class="row">
+				<div class="col-12 btn btn-success mb-4 p-3" style="display:{if="checkSuccess()"}block{else}none{/if};">{function="getSuccess()"}</div>
+			</div>			
+		</div>
+		<div class="col-2">
+			{if="checkUserLogged()"}
+			<!-- <a href='javascript:history.back(0);' class='btn btn-warning float-right'>Voltar</a>  -->
+			{/if}
+		</div>
+	</div>
+</div>

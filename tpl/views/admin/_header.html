@@ -1,0 +1,22 @@
+<header class='admin'>
+	<div class="container">
+		<div class="row">
+			<div class="col-8">
+				{include="_header_title"}
+			</div>
+			<div class="col-4 text-align-right">
+			{if="checkUserLoggedAdmin()"}
+				{include="_header_user-menu"}
+			{/if}				
+			</div>
+		</div>
+		<div class="row">	
+			<div class="col-12 pt-1 pb-1" style="position: relative;">
+				{if="checkUserLoggedAdmin()"}
+					{include="_header_menu"}
+				{/if}
+			</div>
+		</div>
+	</div>
+</header>
+

@@ -1,0 +1,44 @@
+{include="../html/_open"} {include="_header"}
+
+<section>
+	{include="../general/_section_top"}
+	<div class="container">
+		<h2>Editar Usuário</h2>
+		<form action="/admin/users/{$user.userid}" method="post"
+			class="mr-auto ml-auto" style="width: 60%;"
+		>
+			<div class='form-group'>
+				<label for="name">Nome</label> <input type="text"
+					class="form-control" id="name" name="name"
+					placeholder="Digite o nome" value="{$user.name}"
+				>
+			</div>
+			<div class='form-group'>
+				<label for="login">Login</label> <input type="text"
+					class="form-control" id="login" name="login"
+					placeholder="Digite o login" value="{$user.login}"
+				>
+			</div>
+			<div class='form-group'>
+				<label for="email">E-mail</label> <input type="email"
+					class="form-control" id="email" name="email"
+					placeholder="Digite o e-mail" value="{$user.email}"
+				>
+			</div>
+			<div class="form-group">
+				<label for="phone">Telefone</label> <input type="tel"
+					class="form-control" id="phone" name="phone"
+					placeholder="Digite o telefone aqui" value="{$user.phone}"
+				>
+			</div>
+			<div class='form-group'>
+				<label> <input type="checkbox" name="inadmin"
+					value="{$user.inadmin}" {if="$user.inadmin == 1"}checked{/if}> Acesso de Administrador
+				</label>
+			</div>
+			<button type="submit" class="btn btn-primary">Salvar</button>
+		</form>
+	</div>
+</section>
+
+{include="_footer"} {include="../html/_close"}

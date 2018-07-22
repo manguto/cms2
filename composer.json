@@ -1,0 +1,33 @@
+{
+    "name": "manguto/cms2",
+    "type": "library",
+    "description": "A kind of content management system",
+    "authors": [
+        {
+            "name": "Manguto",
+            "email": "admin@manguto.com"
+        }
+    ],
+    "require": {    
+        "php": "^7.0.0",
+        "phpmailer/phpmailer":"5.2.22",
+    	"slim/slim":"2.0",
+    	"rain/raintpl":">=3.0.0"
+    },    
+	"autoload": {
+    	"psr-4": {        
+        	"manguto\\cms2\\lib\\": "lib/",
+        	"manguto\\cms2\\ldb\\": "ldb/",        	
+        	"manguto\\cms2\\model\\": "model/",        	
+        	"manguto\\cms2\\tpl\\": "tpl/"        	
+    	}
+	},    
+    "minimum-stability": "dev"
+}
+
+
+
+
+
+
+

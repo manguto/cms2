@@ -1,0 +1,17 @@
+{include="../html/_open"} {include="_header"}
+
+<section>
+	{include="../general/_section_top"}
+	<div class="container">
+		<h2>Session</h2>
+		<div>
+			<a href='/admin/status/session/reset'
+				class="btn btn-danger float-left"
+			>RESET & LOGOFF</a><br />
+			<br />
+			<div style='width: 100%;'>{function="unserialize($Session)"}</div>
+		</div>
+	</div>
+</section>
+
+{include="_footer"} {include="../html/_close"}

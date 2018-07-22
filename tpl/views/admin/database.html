@@ -1,0 +1,23 @@
+{include="../html/_open"} {include="_header"}
+<section>
+	{autoescape="off"}{$POST}{/autoescape} {include="../general/_section_top"}
+
+	<div class="row w-100 m-0">
+		<div class="col-1"></div>
+		<div class="col-9">
+			<h2><a href='/admin/database' title='Verificar/Atualizar tabelas'>Banco de Dados</a></h2>
+		</div>
+		<div class="col-1">
+			<button onclick='history.back()' class='btn btn-warning float-right'>
+				<img src='/res/general/images/icons/action-undo-3x.png' title="Voltar" /> Voltar
+			</button>
+		</div>		
+	</div>
+	<div class="row w-100 m-0">
+		<div class="col-1"></div>
+		<div class="col-10" style="overflow: auto;">{autoescape="off"}{$Database_Manager}{/autoescape}</div>		
+	</div>
+
+
+</section>
+{include="_footer"} {include="../html/_close"}

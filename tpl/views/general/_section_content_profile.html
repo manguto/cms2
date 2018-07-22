@@ -1,0 +1,37 @@
+<div class="container">
+	<h2>Minha Conta</h2>
+	<div class="row">
+		<div class="col-6">
+			<form method="post" action="{$form_action}">
+				<div class="form-group">
+					<label for="name">Nome</label> <span class="required">*</span> <input
+						type="text" class="form-control" id="name" name="name"
+						placeholder="Digite o name aqui" value="{$user.name}"
+						required="required"
+					>
+				</div>
+				<div class="form-group">
+					<label for="email">E-mail</label> <span class="required">*</span> <input
+						type="email" class="form-control" id="email" name="email"
+						placeholder="Digite o e-mail aqui" value="{$user.email}"
+						required="required"
+					>
+				</div>
+				<div class="form-group">
+					<label for="phone">Telefone</label> <input type="tel"
+						class="form-control" id="phone" name="phone"
+						placeholder="Digite o telefone aqui" value="{$user.phone}"
+					>
+				</div>
+				<div class="form-group">
+					<button type="submit" class="btn btn-success mr-2">Salvar
+						Alterações</button>
+				</div>
+				<div class="form-group">
+					<a class='btn btn-info' href='{$link_change_password}'>Atualizar
+						Senha</a>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
